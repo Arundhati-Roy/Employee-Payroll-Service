@@ -16,11 +16,14 @@ namespace Emp_wage_prob
                 Employee dataSet = new Employee();
                 using (this.sqlConnection)
                 {
-                    string query = @"UPDATE employee_payroll set basicPay=30000 
-                                    where id in (select id from employee_payroll where name='AR')";
+                    string query = @"UPDATE employee_payroll set basicPay=50000 
+                                    where id in (select id from employee_payroll where name=@name)";
+                    SqlParameter nameParam = new SqlParameter("@name", System.Data.SqlDbType.VarChar, 0);
+                    nameParam.Value = "AR";
 
                     //define sql object
                     SqlCommand cmd = new SqlCommand(query, this.sqlConnection);
+                    cmd.Parameters.Add(nameParam);
 
                     this.sqlConnection.Open();
 
