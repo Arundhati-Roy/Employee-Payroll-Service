@@ -13,6 +13,28 @@ namespace EmployeePayroll
         public string gender { get; set; }
 
     }
+    
+    class Department
+    {
+        public string deptId { get; set; }
+        public string deptName { get; set; }
+    }
+    class EmpDept
+    {
+        public int empId { get; set; }
+        public string deptId { get; set; }
+    }
+    class Payroll
+    {
+        public int empId { get; set; }
+        public string deptName { get; set; }
+        public DateTime startDate { get; set; }
+        public double basicPay { get; set; }
+        public double ded { get; set; }
+        public double tax { get; set; }
+        public double incomeTax { get; set; }
+        public double NetPay { get; set; }
+    }
     class Program
     {
         static void Main(string[] args)
