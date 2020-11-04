@@ -3,31 +3,32 @@ using System;
 
 namespace EmployeePayroll
 {
-    class Employee
+    public class Employee
     {
         public int empId { get; set; }
         public string empName { get; set; }
         public string phNo { get; set; }
         public string addr { get; set; }
-        public string compId { get; set; }
+        //public string compId { get; set; }
         public string gender { get; set; }
 
     }
     
-    class Department
+    public class Department
     {
         public string deptId { get; set; }
         public string deptName { get; set; }
     }
-    class EmpDept
+    public class EmpDept
     {
         public int empId { get; set; }
         public string deptId { get; set; }
     }
-    class Payroll
+    public class Payroll
     {
+        public int salId { get; set; }
         public int empId { get; set; }
-        public string deptName { get; set; }
+        //public string deptName { get; set; }
         public DateTime startDate { get; set; }
         public double basicPay { get; set; }
         public double ded { get; set; }
@@ -42,6 +43,11 @@ namespace EmployeePayroll
             Console.WriteLine("Welcome to Employee Payroll");
             EmpRepo repo = new EmpRepo();
             Employee emp = new Employee();
+            //repo.GetAllEmployee();
+            //repo.PutEmployee();
+
+            TSQL tSQL = new TSQL();
+            tSQL.UpdatePayroll(36578.00,"NR");
 
             /*emp.empId = 1;
             emp.compId = "C1";
@@ -50,7 +56,6 @@ namespace EmployeePayroll
             emp.phNo = "568798089";
             emp.addr = "Mumbai";
 */
-            repo.GetAllEmployee();
         }
     }
 }
