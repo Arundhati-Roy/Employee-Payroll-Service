@@ -42,6 +42,8 @@ namespace UnitTestProject1
             //Arrange
             Assert.AreEqual(payroll.basicPay, sal);
         }
+
+
         /// <summary>
         /// Given the name and salary to change update payroll.Stored Procedure
         /// </summary>
@@ -60,5 +62,28 @@ namespace UnitTestProject1
             //Arrange
             Assert.AreEqual(expected[0], l[0]);
         }
+
+
+        /// <summary>
+        /// Given the name and salary to change update payroll.Stored Procedure
+        /// </summary>
+        [TestMethod]
+        public void GetMinMaxAvgSum()
+        {
+            //Arrange
+            EmpRepo repo = new EmpRepo();
+            //Employee emp = new Employee();
+            List<double> expected = new List<double>() { 167769.00, 55923.000000, 75000.00, 36769.00 };
+
+            //Act
+            List<double> l = repo.GetMinMaxAvg();
+
+            //Arrange
+            Assert.AreEqual(expected[0], l[0]);
+            Assert.AreEqual(expected[1], l[1]);
+            Assert.AreEqual(expected[2], l[2]);
+            Assert.AreEqual(expected[3], l[3]);
+        }
+
     }
 }

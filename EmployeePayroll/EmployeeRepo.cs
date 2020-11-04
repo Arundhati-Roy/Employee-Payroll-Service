@@ -222,5 +222,61 @@ namespace Emp_wage_prob
             return lempId;
         }
 
+        public List<double> GetMinMaxAvg()
+        {
+            Employee emp = new Employee();
+            List<double> lempId = new List<double>();
+            try
+            {
+                using (this.sqlConnection)
+                {
+                    string query = @"SELECT SUM(basicPay) as SumF,Avg(basicPay) as AvgF,
+                                    Max(basicPay) as MaxF, min(basicPay) as MinF
+                                    FROM payroll";
+
+                    this.sqlConnection.Open();
+
+                    SqlCommand cmd = new SqlCommand(query, this.sqlConnection);
+
+                    SqlDataReader dr = cmd.ExecuteReader();
+
+                    if (dr.HasRows)
+                    {
+                        while (dr.Read())
+                        {
+                            double sum = Convert.ToDouble(dr.GetDecimal(0));
+                            double avg = Convert.ToDouble(dr.GetDecimal(1));
+                            double max = Convert.ToDouble(dr.GetDecimal(2));
+                            double min = Convert.ToDouble(dr.GetDecimal(3));
+
+                            Console.WriteLine("{0},{1},{2},{3}", sum,avg,max,min);
+                            Console.WriteLine("\n");
+                            lempId.Add(sum);
+                            lempId.Add(avg);
+                            lempId.Add(max);
+                            lempId.Add(min);
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("No data found");
+                    }
+                    dr.Close();
+                    this.sqlConnection.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                //Console.WriteLine("Null data found");
+                throw new Exception(e.Message);
+            }
+            finally
+            {
+                this.sqlConnection.Close();
+            }
+            return lempId;
+        }
+
     }
 }
