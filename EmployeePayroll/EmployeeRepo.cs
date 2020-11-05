@@ -278,5 +278,61 @@ namespace Emp_wage_prob
             return lempId;
         }
 
+
+        public Employee AddEmployeeWithPayroll()
+        {
+            Employee emp = new Employee();
+            try
+            {
+                using (this.sqlConnection)
+                {
+                    string query = @"UPDATE employee set gender ='M' 
+                                     where name = 'Neha' or name ='Shreya'";
+
+                    SqlCommand cmd = new SqlCommand(query, this.sqlConnection);
+                    this.sqlConnection.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+
+                    if (dr.HasRows)
+                    {
+                        while (dr.Read())
+                        {
+                            emp.empId = dr.GetInt32(0);
+                            //emp.compId = dr.GetString(1);
+                            emp.empName = dr.GetString(1);
+                            if (dr["gender"] != DBNull.Value)
+                                emp.gender = dr.GetString(2);
+                            if (dr["empPhone"] != DBNull.Value)
+                                emp.phNo = dr.GetString(3);
+                            if (dr["addr"] != DBNull.Value)
+                                emp.addr = dr.GetString(4);
+
+                            Console.WriteLine("{0},{1},{2},{3},{4}",
+                                emp.empId, emp.empName, emp.gender, emp.phNo, emp.addr);
+                            Console.WriteLine("\n");
+
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("No data found");
+                    }
+                    dr.Close();
+                    this.sqlConnection.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                //Console.WriteLine("Null data found");
+                throw new Exception(e.Message);
+            }
+            finally
+            {
+                this.sqlConnection.Close();
+            }
+            return emp;
+        }
+
     }
 }

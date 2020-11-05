@@ -1,5 +1,6 @@
 ﻿using Emp_wage_prob;
 using System;
+using System.Data;
 
 namespace EmployeePayroll
 {
@@ -46,8 +47,8 @@ namespace EmployeePayroll
             //repo.GetAllEmployee();
             //repo.PutEmployee();
 
-            TSQL tSQL = new TSQL();
-            tSQL.UpdatePayroll(36578.00,"NR");
+            /*TSQL tSQL = new TSQL();
+            tSQL.UpdatePayroll(36578.00,"NR");*/
 
             /*emp.empId = 1;
             emp.compId = "C1";
@@ -56,6 +57,8 @@ namespace EmployeePayroll
             emp.phNo = "568798089";
             emp.addr = "Mumbai";
 */
+            
+
         }
     }
 }

@@ -64,7 +64,7 @@ namespace UnitTestProject1
         }
 
 
-        /// <summary>
+        /*/// <summary>
         /// Given the name and salary to change update payroll.Stored Procedure
         /// </summary>
         [TestMethod]
@@ -73,6 +73,7 @@ namespace UnitTestProject1
             //Arrange
             EmpRepo repo = new EmpRepo();
             //Employee emp = new Employee();
+            Payroll payroll = new Payroll();
             List<double> expected = new List<double>() { 167769.00, 55923.000000, 75000.00, 36769.00 };
 
             //Act
@@ -83,7 +84,22 @@ namespace UnitTestProject1
             Assert.AreEqual(expected[1], l[1]);
             Assert.AreEqual(expected[2], l[2]);
             Assert.AreEqual(expected[3], l[3]);
-        }
+        }*/
+        /// <summary>
+        /// Given the name and salary to change update payroll.Stored Procedure
+        /// </summary>
+        [TestMethod]
+        public void SP_AddEmployee_UpdateOtherTables()
+        {
+            //Arrange
+            TSQL tSQL = new TSQL();
+            Payroll payroll = new Payroll();
 
+            //Act
+            int sal = tSQL.AddToEmpWithPayroll(5354675.00, "Abhimanyu",Convert.ToDateTime("2012-08-23"),"Marketing") ;
+
+            //Arrange
+            Assert.AreEqual(payroll.basicPay, sal);
+        }
     }
 }
