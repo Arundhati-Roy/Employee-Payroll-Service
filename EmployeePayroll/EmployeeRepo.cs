@@ -334,5 +334,45 @@ namespace Emp_wage_prob
             return emp;
         }
 
+        public int DelEmployee()
+        {
+            try
+            {
+                Employee emp = new Employee();
+                using (this.sqlConnection)
+                {
+                    string query = @"delete from employee where empId not in (1,2,4)";
+
+                    //define sql object
+                    SqlCommand cmd = new SqlCommand(query, this.sqlConnection);
+
+                    this.sqlConnection.Open();
+
+                    //cmd.Parameters.AddWithValue("@name", "nallia");
+
+                    int rows= cmd.ExecuteNonQuery();
+                    if (rows > 0)
+                    {
+                        Console.WriteLine(rows + " row(s) affected");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please check your query");
+                    }
+                    this.sqlConnection.Close();
+                    return rows;
+                }
+            }
+            catch (Exception e)
+            {
+                //Console.WriteLine("Null data found");
+                throw new Exception(e.Message);
+            }
+            finally
+            {
+                this.sqlConnection.Close();
+            }
+        }
+
     }
 }
