@@ -279,7 +279,7 @@ namespace Emp_wage_prob
         }
 
 
-        public Employee AddEmployeeWithPayroll()
+/*        public Employee AddEmployeeWithPayroll()
         {
             Employee emp = new Employee();
             try
@@ -333,12 +333,13 @@ namespace Emp_wage_prob
             }
             return emp;
         }
+*/
 
         public int DelEmployee()
         {
             try
             {
-                Employee emp = new Employee();
+                //Employee emp = new Employee();
                 using (this.sqlConnection)
                 {
                     string query = @"delete from employee where empId not in (1,2,4)";
@@ -373,6 +374,8 @@ namespace Emp_wage_prob
                 this.sqlConnection.Close();
             }
         }
+
+        
 
     }
 }

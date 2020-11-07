@@ -16,5 +16,7 @@ C:\Users\priyadarshini roy\source\repos\EmployeePayroll\EmployeePayroll\bin\Debu
 C:\Users\priyadarshini roy\source\repos\EmployeePayroll\EmployeePayroll\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\priyadarshini roy\source\repos\EmployeePayroll\EmployeePayroll\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\priyadarshini roy\source\repos\EmployeePayroll\EmployeePayroll\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\priyadarshini roy\source\repos\EmployeePayroll\EmployeePayroll\obj\Debug\netcoreapp3.1\EmployeePayroll.csproj.CoreCompileInputs.cache
 C:\Users\priyadarshini roy\source\repos\EmployeePayroll\EmployeePayroll\obj\Debug\netcoreapp3.1\EmployeePayroll.csproj.CopyComplete
+C:\Users\priyadarshini roy\source\repos\EmployeePayroll\EmployeePayroll\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\priyadarshini roy\source\repos\EmployeePayroll\EmployeePayroll\obj\Debug\netcoreapp3.1\EmployeePayroll.csproj.CoreCompileInputs.cache
+C:\Users\priyadarshini roy\source\repos\EmployeePayroll\EmployeePayroll\bin\Debug\netcoreapp3.1\CsvHelper.dll

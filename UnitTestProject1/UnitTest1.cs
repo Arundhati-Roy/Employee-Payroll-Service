@@ -24,7 +24,7 @@ namespace UnitTestProject1
             Employee actual = repo.UpdateEmployee();
 
             //Arrange
-            Assert.AreEqual(expected, actual);
+            CollectionAssert.AreEqual((System.Collections.ICollection)expected, (System.Collections.ICollection)actual);
         }*/
 
         /// <summary>

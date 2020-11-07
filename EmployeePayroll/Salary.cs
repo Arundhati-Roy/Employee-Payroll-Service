@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -157,6 +158,7 @@ namespace EmployeePayroll
                                 dept.deptId, dept.deptName,
                                 payroll.salId, payroll.startDate, payroll.basicPay, payroll.ded, payroll.tax, payroll.incomeTax, payroll.NetPay);
                             Console.WriteLine("\n");
+                            writeEmployeeInCSV(emp);
                         }
 
                     }
@@ -278,6 +280,15 @@ namespace EmployeePayroll
             thread.Start();
         }
 
+        public void writeEmployeeInCSV(Employee emp)
+        {
+            string path = @"C:\Users\priyadarshini roy\source\repos\EmployeePayroll\EmployeePayroll\EmployeeCSV.csv";
+            string csv = string.Format("{0},{1},{2},{3},{4}\n",
+                                emp.empId, emp.empName, emp.gender, emp.phNo, emp.addr);
+            File.AppendAllText(path, csv);
+            Console.WriteLine("Written into Excel");
+        }
 
+        
     }
 }

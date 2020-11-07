@@ -1,0 +1,33 @@
+{
+"Employee":[
+  {
+    "empId": 1,
+    "empName": "AR",
+    "phNo": "",
+    "addr": "Mumbai",
+    "gender": "F"
+  },
+  {
+    "empId": 2,
+    "empName": "NR",
+    "phNo": "",
+    "addr": "Mumbai",
+    "gender": "F"
+  },
+  {
+    "empId": 4,
+    "empName": "SR",
+    "phNo": "",
+    "addr": "Mumbai",
+    "gender": "F"
+  },
+  {
+    "empId": 3009,
+    "empName": "Abhimanyu",
+    "phNo": "",
+    "addr": "Mumbai",
+    "gender": "F"
+  }
+
+]
+}
