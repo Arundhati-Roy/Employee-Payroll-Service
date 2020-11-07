@@ -84,7 +84,8 @@ namespace EmployeePayroll
                 Console.WriteLine("Read data successfully");
                 foreach (Employee ad in records)
                 {
-                    Console.Write("\t" + ad.empId);
+                    var id = ad.empId;
+                    Console.Write("\t" + id);
                     Console.Write("\t" + ad.empName);
                     Console.Write("\t" + ad.gender);
                     Console.Write("\t" + ad.phNo);
