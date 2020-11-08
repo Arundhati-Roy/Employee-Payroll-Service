@@ -1,0 +1,46 @@
+{
+  "Employee": [
+    {
+      "id": 1,
+      "empName": "AR",
+      "phNo": "",
+      "addr": "Mumbai",
+      "gender": "F"
+    },
+    {
+      "id": 2,
+      "empName": "NR",
+      "phNo": "",
+      "addr": "Mumbai",
+      "gender": "F"
+    },
+    {
+      "id": 4,
+      "empName": "SR",
+      "phNo": "",
+      "addr": "Mumbai",
+      "gender": "F"
+    },
+    {
+      "id": 3009,
+      "empName": "Abhimanyu",
+      "phNo": "",
+      "addr": "Mumbai",
+      "gender": "F"
+    },
+    {
+      "empName": "Abhimanyu",
+      "phNo": "68687980",
+      "addr": "Hyderabad",
+      "gender": "M",
+      "id": 3010
+    },
+    {
+      "empName": "Samay",
+      "phNo": "68687980",
+      "addr": "Hyderabad",
+      "gender": "M",
+      "id": 3011
+    }
+  ]
+}
