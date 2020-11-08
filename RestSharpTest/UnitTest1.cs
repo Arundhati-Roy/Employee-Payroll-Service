@@ -80,6 +80,9 @@ namespace RestSharpTest
 
         }
 
+        /// <summary>
+        /// Adds Multiple Employees
+        /// </summary>
         [TestMethod]
         public void AddMultipleEmployee()
         {
@@ -111,8 +114,12 @@ namespace RestSharpTest
                 System.Console.WriteLine("ID : " + e.empId + " Name : " + e.empName + " Address : " + e.addr);
             }
         }
+
+        /// <summary>
+        /// Updates Employee
+        /// </summary>
         [TestMethod]
-        public void GivenEmployee_OnUpdate_ShouldReturnUpdatedEmployee()
+        public void UpdateEmployee()
         {
             RestRequest request = new RestRequest("/Employee/4", Method.PUT);
             JObject jObject = new JObject();
@@ -125,6 +132,18 @@ namespace RestSharpTest
             Employee dataResponse = JsonConvert.DeserializeObject<Employee>(response.Content);
             Assert.AreEqual("Shreya", dataResponse.empName);
             Assert.AreEqual("Bhilai", dataResponse.addr);
+            System.Console.WriteLine(response.Content);
+        }
+
+        /// <summary>
+        /// Deletes Employee
+        /// </summary>
+        [TestMethod]
+        public void DeleteEmployee()
+        {
+            RestRequest request = new RestRequest("/Employee/3010", Method.DELETE);
+            IRestResponse response = client.Execute(request);
+            Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
             System.Console.WriteLine(response.Content);
         }
     }
