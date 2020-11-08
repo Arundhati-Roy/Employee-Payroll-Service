@@ -1,0 +1,141 @@
+1,AR,F,,Mumbai,S1,Sales,1,04/02/2018 00:00:00,35000,7000,28000,2800,32200
+
+
+Written into Excel
+2,NR,F,,Mumbai,M2,Marketing,2,09/22/2017 00:00:00,56000,11200,44800,4480,51520
+
+
+Written into Excel
+4,SR,F,,Mumbai,O7,Operating,4,07/14/2010 00:00:00,36769,7353.8,29415.2,2941.52,33827.48
+
+
+Written into Excel
+3026,Abhimanyu,F,,Mumbai,M2,Marketing,2026,08/23/2012 00:00:00,5354675,1070935,4283740,428374,4926301
+
+
+Written into Excel
+4005,Abhimanyu,F,,Mumbai,M2,Marketing,3005,08/23/2012 00:00:00,5354675,1070935,4283740,428374,4926301
+
+
+Written into Excel
+1,AR,F,,Mumbai,S1,Sales,1,04/02/2018 00:00:00,35000,7000,28000,2800,32200
+
+
+Written into Excel
+2,NR,F,,Mumbai,M2,Marketing,2,09/22/2017 00:00:00,56000,11200,44800,4480,51520
+
+
+Written into Excel
+4,SR,F,,Mumbai,O7,Operating,4,07/14/2010 00:00:00,36769,7353.8,29415.2,2941.52,33827.48
+
+
+Written into Excel
+3026,Abhimanyu,F,,Mumbai,M2,Marketing,2026,08/23/2012 00:00:00,5354675,1070935,4283740,428374,4926301
+
+
+Written into Excel
+4005,Abhimanyu,F,,Mumbai,M2,Marketing,3005,08/23/2012 00:00:00,5354675,1070935,4283740,428374,4926301
+
+
+Written into Excel
+4006,Samay,F,,Mumbai,S1,Sales,3006,04/24/2014 00:00:00,1587676,317535.2,1270140.8,127014.08,1460661.92
+
+
+Written into Excel
+1,AR,F,,Mumbai,S1,Sales,1,04/02/2018 00:00:00,35000,7000,28000,2800,32200
+
+
+Written into Excel
+2,NR,F,,Mumbai,M2,Marketing,2,09/22/2017 00:00:00,56000,11200,44800,4480,51520
+
+
+Written into Excel
+4,SR,F,,Mumbai,O7,Operating,4,07/14/2010 00:00:00,36769,7353.8,29415.2,2941.52,33827.48
+
+
+Written into Excel
+3026,Abhimanyu,F,,Mumbai,M2,Marketing,2026,08/23/2012 00:00:00,5354675,1070935,4283740,428374,4926301
+
+
+Written into Excel
+4005,Abhimanyu,F,,Mumbai,M2,Marketing,3005,08/23/2012 00:00:00,5354675,1070935,4283740,428374,4926301
+
+
+Written into Excel
+4006,Samay,F,,Mumbai,S1,Sales,3006,04/24/2014 00:00:00,1587676,317535.2,1270140.8,127014.08,1460661.92
+
+
+Written into Excel
+4007,Upmanyu,F,,Mumbai,F3,Finance,3007,05/25/2015 00:00:00,24675,4935,19740,1974,22701
+
+
+Written into Excel
+1,AR,F,,Mumbai,S1,Sales,1,04/02/2018 00:00:00,35000,7000,28000,2800,32200
+
+
+Written into Excel
+2,NR,F,,Mumbai,M2,Marketing,2,09/22/2017 00:00:00,56000,11200,44800,4480,51520
+
+
+Written into Excel
+4,SR,F,,Mumbai,O7,Operating,4,07/14/2010 00:00:00,36769,7353.8,29415.2,2941.52,33827.48
+
+
+Written into Excel
+3026,Abhimanyu,F,,Mumbai,M2,Marketing,2026,08/23/2012 00:00:00,5354675,1070935,4283740,428374,4926301
+
+
+Written into Excel
+4005,Abhimanyu,F,,Mumbai,M2,Marketing,3005,08/23/2012 00:00:00,5354675,1070935,4283740,428374,4926301
+
+
+Written into Excel
+4006,Samay,F,,Mumbai,S1,Sales,3006,04/24/2014 00:00:00,1587676,317535.2,1270140.8,127014.08,1460661.92
+
+
+Written into Excel
+4007,Upmanyu,F,,Mumbai,F3,Finance,3007,05/25/2015 00:00:00,24675,4935,19740,1974,22701
+
+
+Written into Excel
+4008,Biswa,F,,Mumbai,O7,Operating,3008,06/26/2016 00:00:00,354675,70935,283740,28374,326301
+
+
+Written into Excel
+1,AR,F,,Mumbai,S1,Sales,1,04/02/2018 00:00:00,35000,7000,28000,2800,32200
+
+
+Written into Excel
+2,NR,F,,Mumbai,M2,Marketing,2,09/22/2017 00:00:00,56000,11200,44800,4480,51520
+
+
+Written into Excel
+4,SR,F,,Mumbai,O7,Operating,4,07/14/2010 00:00:00,36769,7353.8,29415.2,2941.52,33827.48
+
+
+Written into Excel
+3026,Abhimanyu,F,,Mumbai,M2,Marketing,2026,08/23/2012 00:00:00,5354675,1070935,4283740,428374,4926301
+
+
+Written into Excel
+4005,Abhimanyu,F,,Mumbai,M2,Marketing,3005,08/23/2012 00:00:00,5354675,1070935,4283740,428374,4926301
+
+
+Written into Excel
+4006,Samay,F,,Mumbai,S1,Sales,3006,04/24/2014 00:00:00,1587676,317535.2,1270140.8,127014.08,1460661.92
+
+
+Written into Excel
+4007,Upmanyu,F,,Mumbai,F3,Finance,3007,05/25/2015 00:00:00,24675,4935,19740,1974,22701
+
+
+Written into Excel
+4008,Biswa,F,,Mumbai,O7,Operating,3008,06/26/2016 00:00:00,354675,70935,283740,28374,326301
+
+
+Written into Excel
+4009,Sagar,F,,Mumbai,M2,Marketing,3009,07/27/2017 00:00:00,4675,935,3740,374,4301
+
+
+Written into Excel
+Duration -00:00:03.3850938

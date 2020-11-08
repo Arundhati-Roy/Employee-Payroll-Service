@@ -148,11 +148,11 @@ namespace UnitTestProject1
             //Act
             empRepo.DelEmployee();
             DateTime sd = DateTime.Now;
-            tSQL.AddToEmpWithPayroll(5354675.00, "Abhimanyu", Convert.ToDateTime("2012-08-23"), "Marketing");
-            tSQL.AddToEmpWithPayroll(1587676.00, "Samay", Convert.ToDateTime("2014-04-24"), "Sales");
-            tSQL.AddToEmpWithPayroll(24675.00, "Upmanyu", Convert.ToDateTime("2015-05-25"), "Finance");
-            tSQL.AddToEmpWithPayroll(354675.00, "Biswa", Convert.ToDateTime("2016-06-26"), "Operating");
-            tSQL.AddToEmpWithPayroll(4675.00, "Sagar", Convert.ToDateTime("2017-07-27"), "Marketing");
+            tSQL.AddToEmpWithPayrollWithThread(5354675.00, "Abhimanyu", Convert.ToDateTime("2012-08-23"), "Marketing");
+            tSQL.AddToEmpWithPayrollWithThread(1587676.00, "Samay", Convert.ToDateTime("2014-04-24"), "Sales");
+            tSQL.AddToEmpWithPayrollWithThread(24675.00, "Upmanyu", Convert.ToDateTime("2015-05-25"), "Finance");
+            tSQL.AddToEmpWithPayrollWithThread(354675.00, "Biswa", Convert.ToDateTime("2016-06-26"), "Operating");
+            tSQL.AddToEmpWithPayrollWithThread(4675.00, "Sagar", Convert.ToDateTime("2017-07-27"), "Marketing");
             DateTime ed = DateTime.Now;
             //Arrange
             //Assert.AreEqual(payroll.basicPay, sal);

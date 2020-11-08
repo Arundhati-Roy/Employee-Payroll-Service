@@ -78,6 +78,7 @@ namespace EmployeePayroll
             string expfp = @"C:\Users\priyadarshini roy\source\repos\EmployeePayroll\EmployeePayroll\EmployeeJson.json";
             //reading csv
             using (var reader = new StreamReader(impfp))
+                //Console.Write("\t" + "Employee");
             using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
                 var records = csv.GetRecords<Employee>().ToList();
